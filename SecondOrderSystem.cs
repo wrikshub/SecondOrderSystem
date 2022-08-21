@@ -1,3 +1,5 @@
+ //Second Order Physics solver by Erik Engström, August 2022
+
 using UnityEngine;
 
 namespace wriks.physics
