@@ -27,5 +27,17 @@ namespace wriks.physics
 
             return currentVal;
         }
+        
+        public static float SecondOrderAngle(float currentRot, float targetRot, float bounce, float damp,
+            ref float oldRot)
+        {
+            var oldLocal = currentRot;
+            currentRot = Mathf.LerpAngle(currentRot, targetRot, (1 - bounce) * damp * Time.fixedDeltaTime);
+            if (Mathf.Abs(currentRot - oldRot) > 300) { oldRot = oldLocal; }
+            currentRot = (1 + bounce) * currentRot - bounce * oldRot;
+            oldRot = oldLocal;
+
+            return currentRot;
+        }
     }
 }
