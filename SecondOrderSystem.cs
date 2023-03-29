@@ -1,4 +1,5 @@
- //Second Order Physics solver by Erik Engström, August 2022
+//Second Order Physics solver by Erik Engström
+//github.com/wwwriks
 
 using UnityEngine;
 
