@@ -1,6 +1,3 @@
-//Second Order Physics solver by Erik Engström
-//github.com/wwwriks
-
 using UnityEngine;
 
 namespace wriks.physics
